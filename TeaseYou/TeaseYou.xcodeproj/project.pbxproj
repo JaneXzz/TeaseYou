@@ -56,6 +56,7 @@
 		3F66DF3F1E8902AB00F6CCBB /* TeaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeaseView.h; sourceTree = "<group>"; };
 		3F66DF401E8902AB00F6CCBB /* TeaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeaseView.m; sourceTree = "<group>"; };
 		3F66DF421E89050700F6CCBB /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
+		3FDF08901E8938E200B52924 /* TeaseYou-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TeaseYou-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +119,7 @@
 				3F66DF1A1E88F79F00F6CCBB /* LaunchScreen.storyboard */,
 				3F66DF1D1E88F79F00F6CCBB /* Info.plist */,
 				3F66DF0C1E88F79F00F6CCBB /* Supporting Files */,
+				3FDF08901E8938E200B52924 /* TeaseYou-Bridging-Header.h */,
 			);
 			path = TeaseYou;
 			sourceTree = "<group>";
@@ -215,6 +217,7 @@
 				TargetAttributes = {
 					3F66DF081E88F79F00F6CCBB = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					3F66DF211E88F79F00F6CCBB = {
@@ -434,10 +437,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TeaseYou/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jane.TeaseYou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TeaseYou/TeaseYou-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -445,10 +452,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TeaseYou/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jane.TeaseYou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TeaseYou/TeaseYou-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -517,6 +527,7 @@
 				3F66DF381E88F79F00F6CCBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F66DF391E88F79F00F6CCBB /* Build configuration list for PBXNativeTarget "TeaseYouTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +536,7 @@
 				3F66DF3B1E88F79F00F6CCBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F66DF3C1E88F79F00F6CCBB /* Build configuration list for PBXNativeTarget "TeaseYouUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +545,7 @@
 				3F66DF3E1E88F79F00F6CCBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
